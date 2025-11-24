@@ -1,4 +1,5 @@
 # Linguistics Recorder App
+
 A React Native app for recording sentences for linguistics research.
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]

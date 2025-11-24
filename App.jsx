@@ -6,7 +6,6 @@ import * as FileSystem from 'expo-file-system/legacy';
 import { useEffect, useState } from 'react';
 import {
 	Alert,
-	Appearance,
 	Platform,
 	ScrollView,
 	StatusBar,
@@ -21,7 +20,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 // --- CONFIGURATION ---
 const RECORDINGS_DIR = FileSystem.documentDirectory + 'recordings/';
-const DEFAULT_THEME = 'dark';
 
 // Determine file extension based on platform
 const getFileExtension = () => {
@@ -32,7 +30,6 @@ const getFileExtension = () => {
 
 export default function App() {
 	// --- THEME SETUP ---
-	Appearance.setColorScheme(DEFAULT_THEME);
 	const colorScheme = useColorScheme();
 	const { theme } = useMaterial3Theme();
 	const paperTheme =
